@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.wrapper {
+    position: relative;
+    background-image: url('Image/bg_currency_Sorkin.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: "Helvetica Neue", sans-serif;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    color: #ffffff;
+}
+.header {
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 360;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.message{
+    color: #efedad;
+    font-size: 2 rem;
+    font-weight: 330;
+    text-align: center;
+    margin-bottom:  40px;
+}
+#converterForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-size: 1.4rem;
+    color: #1ac57e;
+    text-align: center;
+}

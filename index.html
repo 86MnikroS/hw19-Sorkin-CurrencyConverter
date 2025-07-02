@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>hw19-Sorkin-CConv</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="overlay"></div> <!-- просто затемнение -->
+
+    <div class="content">
+        <div class="header">
+            <div>"Money, it's a gas</div>
+            <div>Grab that cash with both hands and make a stash"&copy;</div>
+        </div>
+
+        <div class="message">Try our best-in-class conversion API</div>
+
+        <form id="converterForm">
+            <label>
+                Base Currency:
+                <select id="baseCurrency" disabled></select>
+                <option value = "EUR">Only EUR for free, sorry...</option>
+            </label>
+
+            <label>
+                Target Currency:
+                <select id="targetCurrency"></select>
+            </label>
+
+            <label>
+                Amount:
+                <input type="number" id="amount" min="0" required placeholder="Enter amount">
+            </label>
+
+            <button type="submit">Convert</button>
+        </form>
+
+        <div id="result" style="display: none;"></div>
+    </div>
+</div>
+
+
+<script src="api.js"></script>
+<script src="convApp.js"></script>
+</body>
+</html>
